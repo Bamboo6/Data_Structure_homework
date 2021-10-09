@@ -1,0 +1,4 @@
+"C:\Users\Tou Lau\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\Develop\CLionProjects\Data_Structure
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Develop/CLionProjects/Data_Structure/cmake-build-debug

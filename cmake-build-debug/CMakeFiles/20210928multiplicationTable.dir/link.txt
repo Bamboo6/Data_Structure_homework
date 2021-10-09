@@ -1,0 +1,3 @@
+"C:\Users\Tou Lau\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\20210928multiplicationTable.dir/objects.a
+D:\Downloads\mingw64\bin\ar.exe cr CMakeFiles\20210928multiplicationTable.dir/objects.a @CMakeFiles\20210928multiplicationTable.dir\objects1.rsp
+D:\Downloads\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\20210928multiplicationTable.dir/objects.a -Wl,--no-whole-archive -o 20210928multiplicationTable.exe -Wl,--out-implib,lib20210928multiplicationTable.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\20210928multiplicationTable.dir\linklibs.rsp

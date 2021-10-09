@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.20)
+project(Data_Structure)
+
+set(CMAKE_CXX_STANDARD 14)
+file(GLOB Hello *.cpp)
+foreach(testsourcefile ${Hello})
+    string(REPLACE ".cpp" "" testname ${testsourcefile})
+    string(REPLACE "D:/Develop/CLionProjects/Data_Structure/" "" hiname ${testname})
+    add_executable(${hiname} ${testsourcefile})
+endforeach(testsourcefile ${Hello}})
