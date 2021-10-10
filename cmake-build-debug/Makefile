@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named 20211010_3_Difference
+
+# Build rule for target.
+20211010_3_Difference: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211010_3_Difference
+.PHONY : 20211010_3_Difference
+
+# fast build rule for target.
+20211010_3_Difference/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_3_Difference.dir\build.make CMakeFiles/20211010_3_Difference.dir/build
+.PHONY : 20211010_3_Difference/fast
+
+#=============================================================================
 # Target rules for targets named 20210928factorial
 
 # Build rule for target.
@@ -192,6 +205,19 @@ depend:
 20210928multiplicationTable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20210928multiplicationTable.dir\build.make CMakeFiles/20210928multiplicationTable.dir/build
 .PHONY : 20210928multiplicationTable/fast
+
+#=============================================================================
+# Target rules for targets named 20211010_2_Tumour
+
+# Build rule for target.
+20211010_2_Tumour: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211010_2_Tumour
+.PHONY : 20211010_2_Tumour
+
+# fast build rule for target.
+20211010_2_Tumour/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_2_Tumour.dir\build.make CMakeFiles/20211010_2_Tumour.dir/build
+.PHONY : 20211010_2_Tumour/fast
 
 #=============================================================================
 # Target rules for targets named LQ_factorial
@@ -376,6 +402,54 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211009_1_Prevalence.dir\build.make CMakeFiles/20211009_1_Prevalence.dir/20211009_1_Prevalence.cpp.s
 .PHONY : 20211009_1_Prevalence.cpp.s
 
+20211010_2_Tumour.obj: 20211010_2_Tumour.cpp.obj
+.PHONY : 20211010_2_Tumour.obj
+
+# target to build an object file
+20211010_2_Tumour.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_2_Tumour.dir\build.make CMakeFiles/20211010_2_Tumour.dir/20211010_2_Tumour.cpp.obj
+.PHONY : 20211010_2_Tumour.cpp.obj
+
+20211010_2_Tumour.i: 20211010_2_Tumour.cpp.i
+.PHONY : 20211010_2_Tumour.i
+
+# target to preprocess a source file
+20211010_2_Tumour.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_2_Tumour.dir\build.make CMakeFiles/20211010_2_Tumour.dir/20211010_2_Tumour.cpp.i
+.PHONY : 20211010_2_Tumour.cpp.i
+
+20211010_2_Tumour.s: 20211010_2_Tumour.cpp.s
+.PHONY : 20211010_2_Tumour.s
+
+# target to generate assembly for a file
+20211010_2_Tumour.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_2_Tumour.dir\build.make CMakeFiles/20211010_2_Tumour.dir/20211010_2_Tumour.cpp.s
+.PHONY : 20211010_2_Tumour.cpp.s
+
+20211010_3_Difference.obj: 20211010_3_Difference.cpp.obj
+.PHONY : 20211010_3_Difference.obj
+
+# target to build an object file
+20211010_3_Difference.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_3_Difference.dir\build.make CMakeFiles/20211010_3_Difference.dir/20211010_3_Difference.cpp.obj
+.PHONY : 20211010_3_Difference.cpp.obj
+
+20211010_3_Difference.i: 20211010_3_Difference.cpp.i
+.PHONY : 20211010_3_Difference.i
+
+# target to preprocess a source file
+20211010_3_Difference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_3_Difference.dir\build.make CMakeFiles/20211010_3_Difference.dir/20211010_3_Difference.cpp.i
+.PHONY : 20211010_3_Difference.cpp.i
+
+20211010_3_Difference.s: 20211010_3_Difference.cpp.s
+.PHONY : 20211010_3_Difference.s
+
+# target to generate assembly for a file
+20211010_3_Difference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_3_Difference.dir\build.make CMakeFiles/20211010_3_Difference.dir/20211010_3_Difference.cpp.s
+.PHONY : 20211010_3_Difference.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -462,6 +536,8 @@ help:
 	@echo ... 20210929bp
 	@echo ... 20210929drugstore
 	@echo ... 20211009_1_Prevalence
+	@echo ... 20211010_2_Tumour
+	@echo ... 20211010_3_Difference
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -483,6 +559,12 @@ help:
 	@echo ... 20211009_1_Prevalence.obj
 	@echo ... 20211009_1_Prevalence.i
 	@echo ... 20211009_1_Prevalence.s
+	@echo ... 20211010_2_Tumour.obj
+	@echo ... 20211010_2_Tumour.i
+	@echo ... 20211010_2_Tumour.s
+	@echo ... 20211010_3_Difference.obj
+	@echo ... 20211010_3_Difference.i
+	@echo ... 20211010_3_Difference.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s

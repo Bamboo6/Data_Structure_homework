@@ -17,6 +17,48 @@
 					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="20211010_3_Difference">
+				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/20211010_3_Difference.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 20211010_3_Difference"/>
+					<CompileFile command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="20211010_3_Difference/fast">
+				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/20211010_3_Difference.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 20211010_3_Difference/fast"/>
+					<CompileFile command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="20210928factorial">
 				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/20210928factorial.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
@@ -269,6 +311,48 @@
 					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="20211010_2_Tumour">
+				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/20211010_2_Tumour.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 20211010_2_Tumour"/>
+					<CompileFile command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="20211010_2_Tumour/fast">
+				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/20211010_2_Tumour.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/Downloads/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 20211010_2_Tumour/fast"/>
+					<CompileFile command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Downloads/mingw64/bin/mingw32-make.exe -f &quot;D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="LQ_factorial">
 				<Option output="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/LQ_factorial.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="D:/Develop/CLionProjects/Data_Structure/cmake-build-debug"/>
@@ -433,6 +517,12 @@
 		</Unit>
 		<Unit filename="D:/Develop/CLionProjects/Data_Structure/20211009_1_Prevalence.cpp">
 			<Option target="20211009_1_Prevalence"/>
+		</Unit>
+		<Unit filename="D:/Develop/CLionProjects/Data_Structure/20211010_2_Tumour.cpp">
+			<Option target="20211010_2_Tumour"/>
+		</Unit>
+		<Unit filename="D:/Develop/CLionProjects/Data_Structure/20211010_3_Difference.cpp">
+			<Option target="20211010_3_Difference"/>
 		</Unit>
 		<Unit filename="D:/Develop/CLionProjects/Data_Structure/LQ_factorial.cpp">
 			<Option target="LQ_factorial"/>

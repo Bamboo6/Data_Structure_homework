@@ -10,6 +10,7 @@ int main() {
     double A, B, C, D;
     cin >> n;
     int temp = n;
+
     while (temp--) {
         int t;
         cin >> t;
@@ -25,14 +26,16 @@ int main() {
             d++;
         }
     }
+
     A = 100.0 * a / n;
     B = 100.0 * b / n;
     C = 100.0 * c / n;
     D = 100.0 * d / n;
+
     cout << fixed << setprecision(2)
-        << "1-18: " << A << "%" << endl
-        << "19-35: " << B << "%" << endl
-        << "36-60: " << C << "%" << endl
-        << "60-: " << D << "%" << endl;
+        << A << "%" << endl
+        << B << "%" << endl
+        << C << "%" << endl
+        << D << "%" << endl;
 }
 
