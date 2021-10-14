@@ -59,6 +59,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/20210929drugstore.dir/DependInfo.cmake"
   "CMakeFiles/20210928multiplicationTable.dir/DependInfo.cmake"
   "CMakeFiles/20211010_2_Tumour.dir/DependInfo.cmake"
+  "CMakeFiles/20211014_3_1_virus.dir/DependInfo.cmake"
+  "CMakeFiles/20211014_3_2_palindrome.dir/DependInfo.cmake"
   "CMakeFiles/LQ_factorial.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"

@@ -6,6 +6,8 @@ D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20210928spr
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20210929drugstore.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20210928multiplicationTable.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211010_2_Tumour.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211014_3_1_virus.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211014_3_2_palindrome.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LQ_factorial.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/main.dir

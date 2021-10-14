@@ -220,6 +220,32 @@ depend:
 .PHONY : 20211010_2_Tumour/fast
 
 #=============================================================================
+# Target rules for targets named 20211014_3_1_virus
+
+# Build rule for target.
+20211014_3_1_virus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211014_3_1_virus
+.PHONY : 20211014_3_1_virus
+
+# fast build rule for target.
+20211014_3_1_virus/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_1_virus.dir\build.make CMakeFiles/20211014_3_1_virus.dir/build
+.PHONY : 20211014_3_1_virus/fast
+
+#=============================================================================
+# Target rules for targets named 20211014_3_2_palindrome
+
+# Build rule for target.
+20211014_3_2_palindrome: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211014_3_2_palindrome
+.PHONY : 20211014_3_2_palindrome
+
+# fast build rule for target.
+20211014_3_2_palindrome/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/build
+.PHONY : 20211014_3_2_palindrome/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -450,6 +476,54 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211010_3_Difference.dir\build.make CMakeFiles/20211010_3_Difference.dir/20211010_3_Difference.cpp.s
 .PHONY : 20211010_3_Difference.cpp.s
 
+20211014_3_1_virus.obj: 20211014_3_1_virus.cpp.obj
+.PHONY : 20211014_3_1_virus.obj
+
+# target to build an object file
+20211014_3_1_virus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_1_virus.dir\build.make CMakeFiles/20211014_3_1_virus.dir/20211014_3_1_virus.cpp.obj
+.PHONY : 20211014_3_1_virus.cpp.obj
+
+20211014_3_1_virus.i: 20211014_3_1_virus.cpp.i
+.PHONY : 20211014_3_1_virus.i
+
+# target to preprocess a source file
+20211014_3_1_virus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_1_virus.dir\build.make CMakeFiles/20211014_3_1_virus.dir/20211014_3_1_virus.cpp.i
+.PHONY : 20211014_3_1_virus.cpp.i
+
+20211014_3_1_virus.s: 20211014_3_1_virus.cpp.s
+.PHONY : 20211014_3_1_virus.s
+
+# target to generate assembly for a file
+20211014_3_1_virus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_1_virus.dir\build.make CMakeFiles/20211014_3_1_virus.dir/20211014_3_1_virus.cpp.s
+.PHONY : 20211014_3_1_virus.cpp.s
+
+20211014_3_2_palindrome.obj: 20211014_3_2_palindrome.cpp.obj
+.PHONY : 20211014_3_2_palindrome.obj
+
+# target to build an object file
+20211014_3_2_palindrome.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/20211014_3_2_palindrome.cpp.obj
+.PHONY : 20211014_3_2_palindrome.cpp.obj
+
+20211014_3_2_palindrome.i: 20211014_3_2_palindrome.cpp.i
+.PHONY : 20211014_3_2_palindrome.i
+
+# target to preprocess a source file
+20211014_3_2_palindrome.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/20211014_3_2_palindrome.cpp.i
+.PHONY : 20211014_3_2_palindrome.cpp.i
+
+20211014_3_2_palindrome.s: 20211014_3_2_palindrome.cpp.s
+.PHONY : 20211014_3_2_palindrome.s
+
+# target to generate assembly for a file
+20211014_3_2_palindrome.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/20211014_3_2_palindrome.cpp.s
+.PHONY : 20211014_3_2_palindrome.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -538,6 +612,8 @@ help:
 	@echo ... 20211009_1_Prevalence
 	@echo ... 20211010_2_Tumour
 	@echo ... 20211010_3_Difference
+	@echo ... 20211014_3_1_virus
+	@echo ... 20211014_3_2_palindrome
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -565,6 +641,12 @@ help:
 	@echo ... 20211010_3_Difference.obj
 	@echo ... 20211010_3_Difference.i
 	@echo ... 20211010_3_Difference.s
+	@echo ... 20211014_3_1_virus.obj
+	@echo ... 20211014_3_1_virus.i
+	@echo ... 20211014_3_1_virus.s
+	@echo ... 20211014_3_2_palindrome.obj
+	@echo ... 20211014_3_2_palindrome.i
+	@echo ... 20211014_3_2_palindrome.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
