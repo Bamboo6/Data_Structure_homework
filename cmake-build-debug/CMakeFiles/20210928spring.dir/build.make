@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\Tou Lau\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\Tou Lau\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5284.51\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,15 +68,15 @@ include CMakeFiles/20210928spring.dir/flags.make
 CMakeFiles/20210928spring.dir/20210928spring.cpp.obj: CMakeFiles/20210928spring.dir/flags.make
 CMakeFiles/20210928spring.dir/20210928spring.cpp.obj: ../20210928spring.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/20210928spring.dir/20210928spring.cpp.obj"
-	D:\Downloads\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\20210928spring.dir\20210928spring.cpp.obj -c D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\20210928spring.dir\20210928spring.cpp.obj -c D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp
 
 CMakeFiles/20210928spring.dir/20210928spring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/20210928spring.dir/20210928spring.cpp.i"
-	D:\Downloads\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp > CMakeFiles\20210928spring.dir\20210928spring.cpp.i
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp > CMakeFiles\20210928spring.dir\20210928spring.cpp.i
 
 CMakeFiles/20210928spring.dir/20210928spring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/20210928spring.dir/20210928spring.cpp.s"
-	D:\Downloads\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp -o CMakeFiles\20210928spring.dir\20210928spring.cpp.s
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Develop\CLionProjects\Data_Structure\20210928spring.cpp -o CMakeFiles\20210928spring.dir\20210928spring.cpp.s
 
 # Object files for target 20210928spring
 20210928spring_OBJECTS = \

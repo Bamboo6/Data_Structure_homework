@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-int main( ) {
+int main() {
     int num;
     float f[10000] = {};
 //    cout << "请输入大于1且小于30的整数：";
