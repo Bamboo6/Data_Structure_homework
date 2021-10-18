@@ -168,6 +168,19 @@ depend:
 .PHONY : 20210929bp/fast
 
 #=============================================================================
+# Target rules for targets named 20211018_4_ch0107_02
+
+# Build rule for target.
+20211018_4_ch0107_02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211018_4_ch0107_02
+.PHONY : 20211018_4_ch0107_02
+
+# fast build rule for target.
+20211018_4_ch0107_02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_02.dir\build.make CMakeFiles/20211018_4_ch0107_02.dir/build
+.PHONY : 20211018_4_ch0107_02/fast
+
+#=============================================================================
 # Target rules for targets named 20210928spring
 
 # Build rule for target.
@@ -244,6 +257,32 @@ depend:
 20211014_3_2_palindrome/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/build
 .PHONY : 20211014_3_2_palindrome/fast
+
+#=============================================================================
+# Target rules for targets named 20211018_4_ch0107_09
+
+# Build rule for target.
+20211018_4_ch0107_09: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211018_4_ch0107_09
+.PHONY : 20211018_4_ch0107_09
+
+# fast build rule for target.
+20211018_4_ch0107_09/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_09.dir\build.make CMakeFiles/20211018_4_ch0107_09.dir/build
+.PHONY : 20211018_4_ch0107_09/fast
+
+#=============================================================================
+# Target rules for targets named 20211018_4_ch0109_11
+
+# Build rule for target.
+20211018_4_ch0109_11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211018_4_ch0109_11
+.PHONY : 20211018_4_ch0109_11
+
+# fast build rule for target.
+20211018_4_ch0109_11/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0109_11.dir\build.make CMakeFiles/20211018_4_ch0109_11.dir/build
+.PHONY : 20211018_4_ch0109_11/fast
 
 #=============================================================================
 # Target rules for targets named LQ_factorial
@@ -524,6 +563,78 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211014_3_2_palindrome.dir\build.make CMakeFiles/20211014_3_2_palindrome.dir/20211014_3_2_palindrome.cpp.s
 .PHONY : 20211014_3_2_palindrome.cpp.s
 
+20211018_4_ch0107_02.obj: 20211018_4_ch0107_02.cpp.obj
+.PHONY : 20211018_4_ch0107_02.obj
+
+# target to build an object file
+20211018_4_ch0107_02.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_02.dir\build.make CMakeFiles/20211018_4_ch0107_02.dir/20211018_4_ch0107_02.cpp.obj
+.PHONY : 20211018_4_ch0107_02.cpp.obj
+
+20211018_4_ch0107_02.i: 20211018_4_ch0107_02.cpp.i
+.PHONY : 20211018_4_ch0107_02.i
+
+# target to preprocess a source file
+20211018_4_ch0107_02.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_02.dir\build.make CMakeFiles/20211018_4_ch0107_02.dir/20211018_4_ch0107_02.cpp.i
+.PHONY : 20211018_4_ch0107_02.cpp.i
+
+20211018_4_ch0107_02.s: 20211018_4_ch0107_02.cpp.s
+.PHONY : 20211018_4_ch0107_02.s
+
+# target to generate assembly for a file
+20211018_4_ch0107_02.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_02.dir\build.make CMakeFiles/20211018_4_ch0107_02.dir/20211018_4_ch0107_02.cpp.s
+.PHONY : 20211018_4_ch0107_02.cpp.s
+
+20211018_4_ch0107_09.obj: 20211018_4_ch0107_09.cpp.obj
+.PHONY : 20211018_4_ch0107_09.obj
+
+# target to build an object file
+20211018_4_ch0107_09.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_09.dir\build.make CMakeFiles/20211018_4_ch0107_09.dir/20211018_4_ch0107_09.cpp.obj
+.PHONY : 20211018_4_ch0107_09.cpp.obj
+
+20211018_4_ch0107_09.i: 20211018_4_ch0107_09.cpp.i
+.PHONY : 20211018_4_ch0107_09.i
+
+# target to preprocess a source file
+20211018_4_ch0107_09.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_09.dir\build.make CMakeFiles/20211018_4_ch0107_09.dir/20211018_4_ch0107_09.cpp.i
+.PHONY : 20211018_4_ch0107_09.cpp.i
+
+20211018_4_ch0107_09.s: 20211018_4_ch0107_09.cpp.s
+.PHONY : 20211018_4_ch0107_09.s
+
+# target to generate assembly for a file
+20211018_4_ch0107_09.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0107_09.dir\build.make CMakeFiles/20211018_4_ch0107_09.dir/20211018_4_ch0107_09.cpp.s
+.PHONY : 20211018_4_ch0107_09.cpp.s
+
+20211018_4_ch0109_11.obj: 20211018_4_ch0109_11.cpp.obj
+.PHONY : 20211018_4_ch0109_11.obj
+
+# target to build an object file
+20211018_4_ch0109_11.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0109_11.dir\build.make CMakeFiles/20211018_4_ch0109_11.dir/20211018_4_ch0109_11.cpp.obj
+.PHONY : 20211018_4_ch0109_11.cpp.obj
+
+20211018_4_ch0109_11.i: 20211018_4_ch0109_11.cpp.i
+.PHONY : 20211018_4_ch0109_11.i
+
+# target to preprocess a source file
+20211018_4_ch0109_11.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0109_11.dir\build.make CMakeFiles/20211018_4_ch0109_11.dir/20211018_4_ch0109_11.cpp.i
+.PHONY : 20211018_4_ch0109_11.cpp.i
+
+20211018_4_ch0109_11.s: 20211018_4_ch0109_11.cpp.s
+.PHONY : 20211018_4_ch0109_11.s
+
+# target to generate assembly for a file
+20211018_4_ch0109_11.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0109_11.dir\build.make CMakeFiles/20211018_4_ch0109_11.dir/20211018_4_ch0109_11.cpp.s
+.PHONY : 20211018_4_ch0109_11.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -614,6 +725,9 @@ help:
 	@echo ... 20211010_3_Difference
 	@echo ... 20211014_3_1_virus
 	@echo ... 20211014_3_2_palindrome
+	@echo ... 20211018_4_ch0107_02
+	@echo ... 20211018_4_ch0107_09
+	@echo ... 20211018_4_ch0109_11
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -647,6 +761,15 @@ help:
 	@echo ... 20211014_3_2_palindrome.obj
 	@echo ... 20211014_3_2_palindrome.i
 	@echo ... 20211014_3_2_palindrome.s
+	@echo ... 20211018_4_ch0107_02.obj
+	@echo ... 20211018_4_ch0107_02.i
+	@echo ... 20211018_4_ch0107_02.s
+	@echo ... 20211018_4_ch0107_09.obj
+	@echo ... 20211018_4_ch0107_09.i
+	@echo ... 20211018_4_ch0107_09.s
+	@echo ... 20211018_4_ch0109_11.obj
+	@echo ... 20211018_4_ch0109_11.i
+	@echo ... 20211018_4_ch0109_11.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
