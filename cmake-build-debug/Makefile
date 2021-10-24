@@ -285,6 +285,19 @@ depend:
 .PHONY : 20211018_4_ch0109_11/fast
 
 #=============================================================================
+# Target rules for targets named 20211024_contiguousList
+
+# Build rule for target.
+20211024_contiguousList: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211024_contiguousList
+.PHONY : 20211024_contiguousList
+
+# fast build rule for target.
+20211024_contiguousList/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/build
+.PHONY : 20211024_contiguousList/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -635,6 +648,30 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211018_4_ch0109_11.dir\build.make CMakeFiles/20211018_4_ch0109_11.dir/20211018_4_ch0109_11.cpp.s
 .PHONY : 20211018_4_ch0109_11.cpp.s
 
+20211024_contiguousList.obj: 20211024_contiguousList.cpp.obj
+.PHONY : 20211024_contiguousList.obj
+
+# target to build an object file
+20211024_contiguousList.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/20211024_contiguousList.cpp.obj
+.PHONY : 20211024_contiguousList.cpp.obj
+
+20211024_contiguousList.i: 20211024_contiguousList.cpp.i
+.PHONY : 20211024_contiguousList.i
+
+# target to preprocess a source file
+20211024_contiguousList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/20211024_contiguousList.cpp.i
+.PHONY : 20211024_contiguousList.cpp.i
+
+20211024_contiguousList.s: 20211024_contiguousList.cpp.s
+.PHONY : 20211024_contiguousList.s
+
+# target to generate assembly for a file
+20211024_contiguousList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/20211024_contiguousList.cpp.s
+.PHONY : 20211024_contiguousList.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -728,6 +765,7 @@ help:
 	@echo ... 20211018_4_ch0107_02
 	@echo ... 20211018_4_ch0107_09
 	@echo ... 20211018_4_ch0109_11
+	@echo ... 20211024_contiguousList
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -770,6 +808,9 @@ help:
 	@echo ... 20211018_4_ch0109_11.obj
 	@echo ... 20211018_4_ch0109_11.i
 	@echo ... 20211018_4_ch0109_11.s
+	@echo ... 20211024_contiguousList.obj
+	@echo ... 20211024_contiguousList.i
+	@echo ... 20211024_contiguousList.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
