@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <malloc.h>
 
 struct Node {
     char name[10];
@@ -22,8 +21,10 @@ struct Node *createlist() {
 
 //创建一个学生的结点
 struct Node *createnode(char *newname, int newnum, int newscore) {
-    struct Node *node = (struct Node *) malloc(sizeof(struct Node)); //给结点分配一个内存空间
-    strcpy(node->name, newname); //把信息放到结点中
+    //给结点分配一个内存空间
+    struct Node *node = (struct Node *) malloc(sizeof(struct Node));
+    //把信息放到结点中
+    strcpy(node->name, newname);
     node->score = newscore;
     node->num = newnum;
     node->next = NULL;
@@ -33,9 +34,11 @@ struct Node *createnode(char *newname, int newnum, int newscore) {
 //在尾部插入一个学生的信息
 void insertback(struct Node *list, char *newname, int newnum, int newscore) {
     struct Node *newnode = createnode(newname, newnum, newscore);
-//找到尾结点
-    struct Node *temp = list;//移动的结点用来找到尾结点
-    while (temp->next != NULL) //一直移动到最后一个结点
+    //找到尾结点
+    //移动的结点用来找到尾结点
+    struct Node *temp = list;
+    //一直移动到最后一个结点
+    while (temp->next != NULL)
     {
         temp = temp->next;
     }
@@ -46,8 +49,10 @@ void insertback(struct Node *list, char *newname, int newnum, int newscore) {
 //删除学生信息
 //删除信息的时候我们需要定义两个移动结点，用来找到需要删除的结点和它前面一个结点
 void deleteinfo(struct Node *list, int num) {
-    struct Node *temp = list; //用来找到要删除的前面一个结点
-    struct Node *p = list->next;//指向需要删除的结点
+    //用来找到要删除的前面一个结点
+    struct Node *temp = list;
+    //指向需要删除的结点
+    struct Node *p = list->next;
     while (p->num != num) {
         temp = temp->next;
         p = p->next;
@@ -67,17 +72,18 @@ void searchinfo(struct Node *list, char *name) {
         }
         temp = temp->next;
     }
-    printf("姓名：%s\n 编号：%d\n 得分 ：%d\n\n", temp->name, temp->num, temp->score);
+    printf("姓名：%s\n编号：%d\n得分：%d\n\n", temp->name, temp->num, temp->score);
 }
 
-void print(struct Node *list)//打印所有的信息
+//打印所有的信息
+void print(struct Node *list)
 {
     struct Node *temp = list->next;
     if (temp == NULL) {
         printf("没有学生信息\n");
     }
     while (temp) {
-        printf("姓名：%s\n 编号：%d\n 得分 ：%d\n\n", temp->name, temp->num,
+        printf("姓名：%s\n编号：%d\n得分：%d\n\n", temp->name, temp->num,
                temp->score);
         temp = temp->next;
     }
@@ -143,7 +149,6 @@ void work(struct Node *student) {
         case 5: {
             exit(0);
         }
-            break;
         default:
             printf("输入错误\n");
             break;
@@ -155,6 +160,4 @@ int main() {
     while (1) {
         work(student);
     }
-    system("pause");
-    return 0;
 }
