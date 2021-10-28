@@ -2,64 +2,52 @@
 // Created by Tou on 2021/10/28.
 //
 
-//å¯¹é•¿åº¦ä¸ºnçš„é¡ºåºè¡¨Lï¼Œç¼–å†™ä¸€ä¸ªæ—¶é—´å¤æ‚åº¦ä¸ºO(n) ã€ç©ºé—´å¤æ‚åº¦ä¸ºO(1)çš„ç®—æ³•ï¼Œè¯¥ç®—æ³•åˆ é™¤çº¿æ€§è¡¨ä¸­æ‰€æœ‰å€¼ä¸ºxçš„æ•°æ®å…ƒç´ 
+//¶Ô³¤¶ÈÎªnµÄË³Ğò±íL£¬±àĞ´Ò»¸öÊ±¼ä¸´ÔÓ¶ÈÎªO(n) ¡¢¿Õ¼ä¸´ÔÓ¶ÈÎªO(1)µÄËã·¨£¬¸ÃËã·¨É¾³ıÏßĞÔ±íÖĞËùÓĞÖµÎªxµÄÊı¾İÔªËØ
 #include <iostream>
+
 using namespace std;
 #define ElemType int
 #define Initsize 50
-#define MaxSize 50
-typedef struct {
-    int* data;
-    int length;
-}SqList;
 
-void Init(SqList& L,int n)
-{
-    L.data = new int[Initsize];//c++çš„åˆå§‹åŠ¨æ€åˆ†é…è¯­å¥
-    for (int i = 0; i < n; i++)
-    {
+typedef struct {
+    int *data;
+    int length;
+} SqList;
+
+void Init(SqList &L, int n) {
+    L.data = new int[Initsize];//c++µÄ³õÊ¼¶¯Ì¬·ÖÅäÓï¾ä
+    for (int i = 0; i < n; i++) {
+        printf("ÇëÊäÈëµÚ%d¸öÔªËØ£º\n", i + 1);
         cin >> L.data[i];
     }
     L.length = n;
 }
 
-/*void del_x(SqList &L,ElemType x)
-{
-    int k=0,i;
-	for(i=0;i<=L.length;i++)
-      if(L.data[i]!=x)
-      {
-      	L.data[k]=L.data[i];
-		  k++;
-      }
-	  L.length=k;
-}*/
-void del_x(SqList &L,ElemType x)
-{
-    int k=0,i=0;         //Kè®°å½•å€¼ç­‰äºxçš„å…ƒç´ ä¸ªæ•°
-    while (i<L.length)
-    {
-        if(L.data[i]==x)
+void del_x(SqList &L, ElemType x) {
+    int k = 0, i = 0;         //K¼ÇÂ¼ÖµµÈÓÚxµÄÔªËØ¸öÊı
+    while (i < L.length) {
+        if (L.data[i] == x)
             k++;
         else
-            L.data[i-k]=L.data[i];    //å½“å‰å…ƒç´ å‰ç§»kä¸ªä½ç½®
+            L.data[i - k] = L.data[i];    //µ±Ç°ÔªËØÇ°ÒÆk¸öÎ»ÖÃ
         i++;
     }
-    L.length=L.length-k;         //é¡ºåºè¡¨Lçš„é•¿åº¦é€’å‡
+    L.length = L.length - k;         //Ë³Ğò±íLµÄ³¤¶Èµİ¼õ
 }
 
-int main(){
+int main() {
     SqList L;
     ElemType x;
-    int n=0;
-    cout<<"è¯·è¾“å…¥è¡¨é•¿ï¼š";
-    cin>>n;
-    Init(L,n);
-    cout<<"è¯·è¾“å…¥x:";
-    cin>>x;
-    del_x(L,x);
+    int n = 0;
+    cout << "ÇëÊäÈëÁ´±íÔªËØµÄ¸öÊı£º";
+    cin >> n;
+    Init(L, n);
+    cout << "ÇëÊäÈëitemµÄÖµ£º";
+    cin >> x;
+    del_x(L, x);
+    cout << "½á¹ûÎª£º";
     for (int i = 0; i < L.length; i++)
-        cout << L.data[i]<<" ";
+        cout << L.data[i] << " ";
     return 0;
 }
 
