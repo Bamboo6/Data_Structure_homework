@@ -3,24 +3,24 @@
 //
 
 // from https://www.freesion.com/article/48991114883/
-//è®¾è®¡ä¸€ä¸ªç®—æ³•ï¼Œé€šè¿‡éå†ä¸€è¶Ÿï¼Œå°†é“¾è¡¨ä¸­æ‰€æœ‰ç»“ç‚¹çš„é“¾æ¥æ–¹å‘é€†è½¬ï¼Œä»åˆ©ç”¨åŸè¡¨çš„å­˜å‚¨ç©ºé—´ã€‚
+// Éè¼ÆÒ»¸öËã·¨£¬Í¨¹ı±éÀúÒ»ÌË£¬½«Á´±íÖĞËùÓĞ½áµãµÄÁ´½Ó·½ÏòÄæ×ª£¬ÈÔÀûÓÃÔ­±íµÄ´æ´¢¿Õ¼ä¡£
 #include <iostream>
 
 using namespace std;
 
-//å®šä¹‰å­˜å‚¨
+//¶¨Òå´æ´¢
 typedef struct LNode {
     int date;
     struct LNode *next;
 } Lnode, *Linklist;
 
-//é“¾è¡¨åˆå§‹åŒ–
+//Á´±í³õÊ¼»¯
 void init(Linklist &L) {
-    L = new Lnode;  // å¼€è¾Ÿç©ºé—´
-    L->next = NULL; //å¤´èŠ‚ç‚¹ç½®ä¸ºç©º
+    L = new Lnode;  // ¿ª±Ù¿Õ¼ä
+    L->next = NULL; //Í·½ÚµãÖÃÎª¿Õ
 }
 
-//è¾“å‡ºæ•°æ®
+//Êä³öÊı¾İ
 void output(Linklist &T) {
     Linklist p = T;
     p = p->next;
@@ -30,16 +30,16 @@ void output(Linklist &T) {
     }
 }
 
-//åæ’æ³•æ„å»ºé“¾è¡¨
+//ºó²å·¨¹¹½¨Á´±í
 void CreateLiklist(Linklist &L, int n) {
     Linklist r = L;
     for (int i = 0; i < n; i++) {
-        Linklist p = new Lnode; //å¼€è¾Ÿç©ºé—´ï¼Œpä¸ºèŠ‚ç‚¹
-        printf("è¯·è¾“å…¥%dä¸ªæ•°æ®\n", i + 1);
+        Linklist p = new Lnode; //¿ª±Ù¿Õ¼ä£¬pÎª½Úµã
+        printf("ÇëÊäÈëµÚ%d¸öÊı¾İ\n", i + 1);
         cin >> p->date;
         p->next = NULL;
-        r->next = p; //å°†æ–°èŠ‚ç‚¹æ’å…¥rä¹‹å
-        r = p;       //ræŒ‡å‘æ–°çš„å°¾èŠ‚ç‚¹
+        r->next = p; //½«ĞÂ½Úµã²åÈërÖ®ºó
+        r = p;       //rÖ¸ÏòĞÂµÄÎ²½Úµã
     }
 }
 
@@ -49,23 +49,23 @@ void inverse(Linklist &L) {
     Linklist q;
     while (p) {
         q = p;
-        p = p->next;//æŒ‡å‘åç»§
-        q->next = L->next;//å‰æ’æ³•æ’å…¥å…ƒç´ 
+        p = p->next;//Ö¸Ïòºó¼Ì
+        q->next = L->next;//Ç°²å·¨²åÈëÔªËØ
         L->next = q;
     }
 }
 
 int main() {
-    Linklist La;
-    //åˆå§‹åŒ–
-    init(La);
+    Linklist linklist;
+    //³õÊ¼»¯
+    init(linklist);
     int n1;
-    cout << "è¯·è¾“å…¥è¯·è¾“å…¥é“¾è¡¨å…ƒç´ çš„ä¸ªæ•°" << endl;
+    cout << "ÇëÊäÈëÁ´±íÔªËØµÄ¸öÊı" << endl;
     cin >> n1;
-    CreateLiklist(La, n1);
-    inverse(La);
-    cout << "La:";
-    output(La);
+    CreateLiklist(linklist, n1);
+    inverse(linklist);
+    cout << "Äæ×ªºó½á¹û£º";
+    output(linklist);
     cout << endl;
 }
 
