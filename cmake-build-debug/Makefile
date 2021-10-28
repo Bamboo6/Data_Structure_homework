@@ -259,6 +259,19 @@ depend:
 .PHONY : 20211014_3_2_palindrome/fast
 
 #=============================================================================
+# Target rules for targets named 20211028_10
+
+# Build rule for target.
+20211028_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211028_10
+.PHONY : 20211028_10
+
+# fast build rule for target.
+20211028_10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_10.dir\build.make CMakeFiles/20211028_10.dir/build
+.PHONY : 20211028_10/fast
+
+#=============================================================================
 # Target rules for targets named 20211018_4_ch0107_09
 
 # Build rule for target.
@@ -296,6 +309,19 @@ depend:
 20211024_contiguousList/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/build
 .PHONY : 20211024_contiguousList/fast
+
+#=============================================================================
+# Target rules for targets named 20211028_7
+
+# Build rule for target.
+20211028_7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211028_7
+.PHONY : 20211028_7
+
+# fast build rule for target.
+20211028_7/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_7.dir\build.make CMakeFiles/20211028_7.dir/build
+.PHONY : 20211028_7/fast
 
 #=============================================================================
 # Target rules for targets named LQ_factorial
@@ -672,6 +698,54 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211024_contiguousList.dir\build.make CMakeFiles/20211024_contiguousList.dir/20211024_contiguousList.cpp.s
 .PHONY : 20211024_contiguousList.cpp.s
 
+20211028_10.obj: 20211028_10.cpp.obj
+.PHONY : 20211028_10.obj
+
+# target to build an object file
+20211028_10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_10.dir\build.make CMakeFiles/20211028_10.dir/20211028_10.cpp.obj
+.PHONY : 20211028_10.cpp.obj
+
+20211028_10.i: 20211028_10.cpp.i
+.PHONY : 20211028_10.i
+
+# target to preprocess a source file
+20211028_10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_10.dir\build.make CMakeFiles/20211028_10.dir/20211028_10.cpp.i
+.PHONY : 20211028_10.cpp.i
+
+20211028_10.s: 20211028_10.cpp.s
+.PHONY : 20211028_10.s
+
+# target to generate assembly for a file
+20211028_10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_10.dir\build.make CMakeFiles/20211028_10.dir/20211028_10.cpp.s
+.PHONY : 20211028_10.cpp.s
+
+20211028_7.obj: 20211028_7.cpp.obj
+.PHONY : 20211028_7.obj
+
+# target to build an object file
+20211028_7.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_7.dir\build.make CMakeFiles/20211028_7.dir/20211028_7.cpp.obj
+.PHONY : 20211028_7.cpp.obj
+
+20211028_7.i: 20211028_7.cpp.i
+.PHONY : 20211028_7.i
+
+# target to preprocess a source file
+20211028_7.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_7.dir\build.make CMakeFiles/20211028_7.dir/20211028_7.cpp.i
+.PHONY : 20211028_7.cpp.i
+
+20211028_7.s: 20211028_7.cpp.s
+.PHONY : 20211028_7.s
+
+# target to generate assembly for a file
+20211028_7.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211028_7.dir\build.make CMakeFiles/20211028_7.dir/20211028_7.cpp.s
+.PHONY : 20211028_7.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -766,6 +840,8 @@ help:
 	@echo ... 20211018_4_ch0107_09
 	@echo ... 20211018_4_ch0109_11
 	@echo ... 20211024_contiguousList
+	@echo ... 20211028_10
+	@echo ... 20211028_7
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -811,6 +887,12 @@ help:
 	@echo ... 20211024_contiguousList.obj
 	@echo ... 20211024_contiguousList.i
 	@echo ... 20211024_contiguousList.s
+	@echo ... 20211028_10.obj
+	@echo ... 20211028_10.i
+	@echo ... 20211028_10.s
+	@echo ... 20211028_7.obj
+	@echo ... 20211028_7.i
+	@echo ... 20211028_7.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
