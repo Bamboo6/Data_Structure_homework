@@ -16,6 +16,9 @@ D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211024_co
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211028_7.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211031_8.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211104_3.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211105_3_5_to_3_8.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211107_labReports2_non_recursion.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/20211107_labReports2_recursion.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LQ_factorial.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/main.dir

@@ -350,6 +350,45 @@ depend:
 .PHONY : 20211104_3/fast
 
 #=============================================================================
+# Target rules for targets named 20211105_3_5_to_3_8
+
+# Build rule for target.
+20211105_3_5_to_3_8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211105_3_5_to_3_8
+.PHONY : 20211105_3_5_to_3_8
+
+# fast build rule for target.
+20211105_3_5_to_3_8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211105_3_5_to_3_8.dir\build.make CMakeFiles/20211105_3_5_to_3_8.dir/build
+.PHONY : 20211105_3_5_to_3_8/fast
+
+#=============================================================================
+# Target rules for targets named 20211107_labReports2_non_recursion
+
+# Build rule for target.
+20211107_labReports2_non_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211107_labReports2_non_recursion
+.PHONY : 20211107_labReports2_non_recursion
+
+# fast build rule for target.
+20211107_labReports2_non_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_non_recursion.dir\build.make CMakeFiles/20211107_labReports2_non_recursion.dir/build
+.PHONY : 20211107_labReports2_non_recursion/fast
+
+#=============================================================================
+# Target rules for targets named 20211107_labReports2_recursion
+
+# Build rule for target.
+20211107_labReports2_recursion: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211107_labReports2_recursion
+.PHONY : 20211107_labReports2_recursion
+
+# fast build rule for target.
+20211107_labReports2_recursion/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_recursion.dir\build.make CMakeFiles/20211107_labReports2_recursion.dir/build
+.PHONY : 20211107_labReports2_recursion/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -820,6 +859,78 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211104_3.dir\build.make CMakeFiles/20211104_3.dir/20211104_3.cpp.s
 .PHONY : 20211104_3.cpp.s
 
+20211105_3_5_to_3_8.obj: 20211105_3_5_to_3_8.cpp.obj
+.PHONY : 20211105_3_5_to_3_8.obj
+
+# target to build an object file
+20211105_3_5_to_3_8.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211105_3_5_to_3_8.dir\build.make CMakeFiles/20211105_3_5_to_3_8.dir/20211105_3_5_to_3_8.cpp.obj
+.PHONY : 20211105_3_5_to_3_8.cpp.obj
+
+20211105_3_5_to_3_8.i: 20211105_3_5_to_3_8.cpp.i
+.PHONY : 20211105_3_5_to_3_8.i
+
+# target to preprocess a source file
+20211105_3_5_to_3_8.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211105_3_5_to_3_8.dir\build.make CMakeFiles/20211105_3_5_to_3_8.dir/20211105_3_5_to_3_8.cpp.i
+.PHONY : 20211105_3_5_to_3_8.cpp.i
+
+20211105_3_5_to_3_8.s: 20211105_3_5_to_3_8.cpp.s
+.PHONY : 20211105_3_5_to_3_8.s
+
+# target to generate assembly for a file
+20211105_3_5_to_3_8.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211105_3_5_to_3_8.dir\build.make CMakeFiles/20211105_3_5_to_3_8.dir/20211105_3_5_to_3_8.cpp.s
+.PHONY : 20211105_3_5_to_3_8.cpp.s
+
+20211107_labReports2_non_recursion.obj: 20211107_labReports2_non_recursion.cpp.obj
+.PHONY : 20211107_labReports2_non_recursion.obj
+
+# target to build an object file
+20211107_labReports2_non_recursion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_non_recursion.dir\build.make CMakeFiles/20211107_labReports2_non_recursion.dir/20211107_labReports2_non_recursion.cpp.obj
+.PHONY : 20211107_labReports2_non_recursion.cpp.obj
+
+20211107_labReports2_non_recursion.i: 20211107_labReports2_non_recursion.cpp.i
+.PHONY : 20211107_labReports2_non_recursion.i
+
+# target to preprocess a source file
+20211107_labReports2_non_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_non_recursion.dir\build.make CMakeFiles/20211107_labReports2_non_recursion.dir/20211107_labReports2_non_recursion.cpp.i
+.PHONY : 20211107_labReports2_non_recursion.cpp.i
+
+20211107_labReports2_non_recursion.s: 20211107_labReports2_non_recursion.cpp.s
+.PHONY : 20211107_labReports2_non_recursion.s
+
+# target to generate assembly for a file
+20211107_labReports2_non_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_non_recursion.dir\build.make CMakeFiles/20211107_labReports2_non_recursion.dir/20211107_labReports2_non_recursion.cpp.s
+.PHONY : 20211107_labReports2_non_recursion.cpp.s
+
+20211107_labReports2_recursion.obj: 20211107_labReports2_recursion.cpp.obj
+.PHONY : 20211107_labReports2_recursion.obj
+
+# target to build an object file
+20211107_labReports2_recursion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_recursion.dir\build.make CMakeFiles/20211107_labReports2_recursion.dir/20211107_labReports2_recursion.cpp.obj
+.PHONY : 20211107_labReports2_recursion.cpp.obj
+
+20211107_labReports2_recursion.i: 20211107_labReports2_recursion.cpp.i
+.PHONY : 20211107_labReports2_recursion.i
+
+# target to preprocess a source file
+20211107_labReports2_recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_recursion.dir\build.make CMakeFiles/20211107_labReports2_recursion.dir/20211107_labReports2_recursion.cpp.i
+.PHONY : 20211107_labReports2_recursion.cpp.i
+
+20211107_labReports2_recursion.s: 20211107_labReports2_recursion.cpp.s
+.PHONY : 20211107_labReports2_recursion.s
+
+# target to generate assembly for a file
+20211107_labReports2_recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211107_labReports2_recursion.dir\build.make CMakeFiles/20211107_labReports2_recursion.dir/20211107_labReports2_recursion.cpp.s
+.PHONY : 20211107_labReports2_recursion.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -918,6 +1029,9 @@ help:
 	@echo ... 20211028_7
 	@echo ... 20211031_8
 	@echo ... 20211104_3
+	@echo ... 20211105_3_5_to_3_8
+	@echo ... 20211107_labReports2_non_recursion
+	@echo ... 20211107_labReports2_recursion
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -975,6 +1089,15 @@ help:
 	@echo ... 20211104_3.obj
 	@echo ... 20211104_3.i
 	@echo ... 20211104_3.s
+	@echo ... 20211105_3_5_to_3_8.obj
+	@echo ... 20211105_3_5_to_3_8.i
+	@echo ... 20211105_3_5_to_3_8.s
+	@echo ... 20211107_labReports2_non_recursion.obj
+	@echo ... 20211107_labReports2_non_recursion.i
+	@echo ... 20211107_labReports2_non_recursion.s
+	@echo ... 20211107_labReports2_recursion.obj
+	@echo ... 20211107_labReports2_recursion.i
+	@echo ... 20211107_labReports2_recursion.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
