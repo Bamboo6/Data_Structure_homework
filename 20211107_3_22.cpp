@@ -129,7 +129,7 @@ int menu() {
     return c;
 }
 
-void main() {
+int main() {
     while (1) {
         switch (menu()) {
             case 1: {
