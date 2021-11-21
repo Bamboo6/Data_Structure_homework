@@ -415,6 +415,19 @@ depend:
 .PHONY : 20211113_labReports3/fast
 
 #=============================================================================
+# Target rules for targets named 20211121_labReports4
+
+# Build rule for target.
+20211121_labReports4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211121_labReports4
+.PHONY : 20211121_labReports4
+
+# fast build rule for target.
+20211121_labReports4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211121_labReports4.dir\build.make CMakeFiles/20211121_labReports4.dir/build
+.PHONY : 20211121_labReports4/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -1005,6 +1018,30 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211113_labReports3.dir\build.make CMakeFiles/20211113_labReports3.dir/20211113_labReports3.cpp.s
 .PHONY : 20211113_labReports3.cpp.s
 
+20211121_labReports4.obj: 20211121_labReports4.cpp.obj
+.PHONY : 20211121_labReports4.obj
+
+# target to build an object file
+20211121_labReports4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211121_labReports4.dir\build.make CMakeFiles/20211121_labReports4.dir/20211121_labReports4.cpp.obj
+.PHONY : 20211121_labReports4.cpp.obj
+
+20211121_labReports4.i: 20211121_labReports4.cpp.i
+.PHONY : 20211121_labReports4.i
+
+# target to preprocess a source file
+20211121_labReports4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211121_labReports4.dir\build.make CMakeFiles/20211121_labReports4.dir/20211121_labReports4.cpp.i
+.PHONY : 20211121_labReports4.cpp.i
+
+20211121_labReports4.s: 20211121_labReports4.cpp.s
+.PHONY : 20211121_labReports4.s
+
+# target to generate assembly for a file
+20211121_labReports4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211121_labReports4.dir\build.make CMakeFiles/20211121_labReports4.dir/20211121_labReports4.cpp.s
+.PHONY : 20211121_labReports4.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -1108,6 +1145,7 @@ help:
 	@echo ... 20211107_labReports2_non_recursion
 	@echo ... 20211107_labReports2_recursion
 	@echo ... 20211113_labReports3
+	@echo ... 20211121_labReports4
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -1180,6 +1218,9 @@ help:
 	@echo ... 20211113_labReports3.obj
 	@echo ... 20211113_labReports3.i
 	@echo ... 20211113_labReports3.s
+	@echo ... 20211121_labReports4.obj
+	@echo ... 20211121_labReports4.i
+	@echo ... 20211121_labReports4.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
