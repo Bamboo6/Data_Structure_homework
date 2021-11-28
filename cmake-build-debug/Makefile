@@ -428,6 +428,19 @@ depend:
 .PHONY : 20211121_labReports4/fast
 
 #=============================================================================
+# Target rules for targets named 20211128_labReports5
+
+# Build rule for target.
+20211128_labReports5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211128_labReports5
+.PHONY : 20211128_labReports5
+
+# fast build rule for target.
+20211128_labReports5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/build
+.PHONY : 20211128_labReports5/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -1042,6 +1055,30 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211121_labReports4.dir\build.make CMakeFiles/20211121_labReports4.dir/20211121_labReports4.cpp.s
 .PHONY : 20211121_labReports4.cpp.s
 
+20211128_labReports5.obj: 20211128_labReports5.cpp.obj
+.PHONY : 20211128_labReports5.obj
+
+# target to build an object file
+20211128_labReports5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/20211128_labReports5.cpp.obj
+.PHONY : 20211128_labReports5.cpp.obj
+
+20211128_labReports5.i: 20211128_labReports5.cpp.i
+.PHONY : 20211128_labReports5.i
+
+# target to preprocess a source file
+20211128_labReports5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/20211128_labReports5.cpp.i
+.PHONY : 20211128_labReports5.cpp.i
+
+20211128_labReports5.s: 20211128_labReports5.cpp.s
+.PHONY : 20211128_labReports5.s
+
+# target to generate assembly for a file
+20211128_labReports5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/20211128_labReports5.cpp.s
+.PHONY : 20211128_labReports5.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -1146,6 +1183,7 @@ help:
 	@echo ... 20211107_labReports2_recursion
 	@echo ... 20211113_labReports3
 	@echo ... 20211121_labReports4
+	@echo ... 20211128_labReports5
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -1221,6 +1259,9 @@ help:
 	@echo ... 20211121_labReports4.obj
 	@echo ... 20211121_labReports4.i
 	@echo ... 20211121_labReports4.s
+	@echo ... 20211128_labReports5.obj
+	@echo ... 20211128_labReports5.i
+	@echo ... 20211128_labReports5.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
