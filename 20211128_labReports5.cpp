@@ -1,7 +1,6 @@
 //
 // Created by Tou on 2021/11/28.
 //
-
 #include <iostream>
 #include <iomanip>
 #include <cstring>
@@ -18,7 +17,7 @@ typedef struct {
 typedef char **HuffmanCode;
 
 HuffmanTree HT = NULL;                       /*HT为存放哈夫曼树的数组*/
-void huffman(double *w, double n)/*建立哈夫曼树*/
+void huffman(double *w, double n, char cha[])/*建立哈夫曼树*/
 {
     int m, i, j, k;
     int s1, s2, s3;
@@ -89,11 +88,11 @@ void huffman(double *w, double n)/*建立哈夫曼树*/
         HT[i].weight = HT[s1].weight + HT[s2].weight;
     }
     for (i = 1; i <= m; i++)   /*输出哈夫曼树*/
-        cout << setw(5) << i << setw(5) << HT[i].weight << setw(5) << HT[i].parent <<
+        cout << setw(5) << i << setw(5) << cha[i - 1] << setw(5) << HT[i].weight << setw(5) << HT[i].parent <<
              setw(5) << HT[i].lchild << setw(5) << HT[i].rchild << endl;
 }
 
-void huffmancode1(char cd[], HuffmanCode HC, int n) //自底向上编译
+void huffmancode1(char cd[], HuffmanCode HC, int n, char cha[]) //自底向上编译
 {
     int start, c, i, f;
     cd[n - 1] = '\0';                        /*编码结束符*/
@@ -108,11 +107,11 @@ void huffmancode1(char cd[], HuffmanCode HC, int n) //自底向上编译
         }
         HC[i] = new char[n - start];    //为第i个字符编码分配空间
         strcpy(HC[i], &cd[start]);                      /*从cd复制编码串到HC*/
-        cout << HC[i] << endl;
+        cout << cha[i - 1] << "\t" << HC[i] << endl;
     }
 }
 
-void huffmancode2(char cd[], HuffmanCode HC, int n)  //自顶向下编译
+void huffmancode2(char cd[], HuffmanCode HC, int n, char cha[])  //自顶向下编译
 {
     int i, p, cdlen = 0;
     p = 2 * n - 1;   //p指向根
@@ -130,7 +129,7 @@ void huffmancode2(char cd[], HuffmanCode HC, int n)  //自顶向下编译
                 /*为第i个字符编码分配空间*/
                 cd[cdlen] = '\0';
                 strcpy(HC[p], cd);            /*从cd复制编码串到HC*/
-                cout << p << "   " << HC[p] << endl;
+                cout << p << "\t" << cha[p - 1] << "\t" << HC[p] << endl;
             }
         } else if (HT[p].weight == 1)            /*向右*/
         {
@@ -139,23 +138,34 @@ void huffmancode2(char cd[], HuffmanCode HC, int n)  //自顶向下编译
                 p = HT[p].rchild;
                 cd[cdlen++] = '1';
             }
-        } else                       /*HT[p].weight==2，退回*/
-        { //HT[p].weight=0;
+        } else {
             p = HT[p].parent;
             --cdlen;                 /*退到父结点，编码长度减1*/
         }
     }
 }
 
+void HCode(HuffmanCode HC, int n, char ch[], int l, char cha[]) {
+    string s = "";
+    for (int i = 0; i < l; ++i) {
+        for (int j = 1; j <= n; ++j) {
+            if (ch[i] == cha[j]) {
+                s += HC[j];
+                break;
+            }
+        }
+    }
+    cout << "编码为：" << s << endl;
+}
+
 void decode(char cha[], int n)
 /*哈夫曼树译码*/
 {
     char ym[99];
-    int i, l, k = 2 * n - 1;          //从根结点往下走
-    cout << "\n输入哈夫曼编码串长度:\n";
-    cin >> l;
+    int i, l, k = 2 * n - 1;
     cout << "输入哈夫曼编码串:\n";
     cin >> ym;
+    l = strlen(ym);
     for (i = 0; i < l; i++) {
         if (ym[i] == '0') k = HT[k].lchild;
         else k = HT[k].rchild;
@@ -165,6 +175,7 @@ void decode(char cha[], int n)
             k = 2 * n - 1;         // k又指向根，2*n-1为根结点下标
         }
     }
+    cout << endl;
 }
 
 int menu() {
@@ -181,12 +192,8 @@ int menu() {
 }
 
 int main() {
-//	double w[99];
-//	int i,n=0;               // w数组用于存放各终端结点的权值
-//  	char cd[99],ch,cha[99];        //cd存放编码数组，cha存放各终端结点的数据
-//  	HuffmanCode HC;
-    int i, n = 26;               // w数组用于存放各终端结点的权值
-    char cd[99], ch;          // cd存放编码数组，cha存放各终端结点的数据
+    int n = 26;               // w数组用于存放各终端结点的权值
+    char cd[99], ch[1000];          // cd存放编码数组，cha存放各终端结点的数据
     HuffmanCode HC;          // HC用来存放编码串
     char cha[99] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     double w[27] = {0, 11.88312, 8.181818, 7.207792, 7.012987, 6.948052, 6.623377, 5.38961, 5.324675, 5.194805,
@@ -196,41 +203,26 @@ int main() {
     while (1) {
         switch (menu()) {
             case 1: {
-//  			      cout<<"请输入26个字母(以'#'结束):\n";
-//		      for(i=1;;i++)
-//				  {
-//				  	cin>>ch;
-//						    if(ch=='#') break;
-//				    cha[i]=ch;n++;
-//				  }
-//				   cout<<"请输入26个字母对应的频率（权值）:\n";
-//  				   for(i=1;i<=n;i++)
-//					 cin>>w[i];
-                huffman(w, n);         //调用建立哈夫曼树的函数
+                huffman(w, n, cha);         //调用建立哈夫曼树的函数
                 break;
             }
 
             case 2: {
                 HC = new char *[n + 1];
-                huffmancode1(cd, HC, n); //调用为哈夫曼树编码的函数(自底向上)
+                huffmancode1(cd, HC, n, cha); //调用为哈夫曼树编码的函数(自底向上)
                 break;
             }
 
             case 3: {
                 HC = new char *[n + 1];
-                huffmancode2(cd, HC, n); //调用为哈夫曼树编码的函数(自顶向下)
+                huffmancode2(cd, HC, n, cha); //调用为哈夫曼树编码的函数(自顶向下)
                 break;
             }
             case 4: {
-                cout << "请输入一句英语:(以#结束)\n";
-                for (i = 1; i <= n; i++) {
-                    cin >> ch;
-                    if (ch == '#') break;
-                    cha[i] = ch;
-                    n++;
-                }
-                HC = new char *[n];
-                huffmancode1(cd, HC, n); //调用为哈夫曼树编码的函数(自底向上)
+                cout << "请输入一句英语: \n";
+                cin >> ch;
+                int l = strlen(ch);
+                HCode(HC, n, ch, l, cha);
                 break;
             }
             case 5: {
@@ -245,4 +237,3 @@ int main() {
         }
     }
 }
-

@@ -61,6 +61,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/20210928multiplicationTable.dir/DependInfo.cmake"
   "CMakeFiles/20211010_2_Tumour.dir/DependInfo.cmake"
   "CMakeFiles/20211014_3_1_virus.dir/DependInfo.cmake"
+  "CMakeFiles/test2.dir/DependInfo.cmake"
   "CMakeFiles/20211014_3_2_palindrome.dir/DependInfo.cmake"
   "CMakeFiles/20211028_10.dir/DependInfo.cmake"
   "CMakeFiles/20211018_4_ch0107_09.dir/DependInfo.cmake"
@@ -76,7 +77,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/20211113_labReports3.dir/DependInfo.cmake"
   "CMakeFiles/20211121_labReports4.dir/DependInfo.cmake"
   "CMakeFiles/20211128_labReports5.dir/DependInfo.cmake"
+  "CMakeFiles/test3.dir/DependInfo.cmake"
   "CMakeFiles/LQ_factorial.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/test4.dir/DependInfo.cmake"
   )

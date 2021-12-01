@@ -246,6 +246,19 @@ depend:
 .PHONY : 20211014_3_1_virus/fast
 
 #=============================================================================
+# Target rules for targets named test2
+
+# Build rule for target.
+test2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test2
+.PHONY : test2
+
+# fast build rule for target.
+test2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/build
+.PHONY : test2/fast
+
+#=============================================================================
 # Target rules for targets named 20211014_3_2_palindrome
 
 # Build rule for target.
@@ -441,6 +454,19 @@ depend:
 .PHONY : 20211128_labReports5/fast
 
 #=============================================================================
+# Target rules for targets named test3
+
+# Build rule for target.
+test3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test3
+.PHONY : test3
+
+# fast build rule for target.
+test3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/build
+.PHONY : test3/fast
+
+#=============================================================================
 # Target rules for targets named LQ_factorial
 
 # Build rule for target.
@@ -478,6 +504,19 @@ test: cmake_check_build_system
 test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named test4
+
+# Build rule for target.
+test4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test4
+.PHONY : test4
+
+# fast build rule for target.
+test4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/build
+.PHONY : test4/fast
 
 20210928factorial.obj: 20210928factorial.cpp.obj
 .PHONY : 20210928factorial.obj
@@ -1151,6 +1190,78 @@ test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.cpp.s
 .PHONY : test.cpp.s
 
+test2.obj: test2.cpp.obj
+.PHONY : test2.obj
+
+# target to build an object file
+test2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/test2.cpp.obj
+.PHONY : test2.cpp.obj
+
+test2.i: test2.cpp.i
+.PHONY : test2.i
+
+# target to preprocess a source file
+test2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/test2.cpp.i
+.PHONY : test2.cpp.i
+
+test2.s: test2.cpp.s
+.PHONY : test2.s
+
+# target to generate assembly for a file
+test2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/test2.cpp.s
+.PHONY : test2.cpp.s
+
+test3.obj: test3.cpp.obj
+.PHONY : test3.obj
+
+# target to build an object file
+test3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/test3.cpp.obj
+.PHONY : test3.cpp.obj
+
+test3.i: test3.cpp.i
+.PHONY : test3.i
+
+# target to preprocess a source file
+test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/test3.cpp.i
+.PHONY : test3.cpp.i
+
+test3.s: test3.cpp.s
+.PHONY : test3.s
+
+# target to generate assembly for a file
+test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/test3.cpp.s
+.PHONY : test3.cpp.s
+
+test4.obj: test4.cpp.obj
+.PHONY : test4.obj
+
+# target to build an object file
+test4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/test4.cpp.obj
+.PHONY : test4.cpp.obj
+
+test4.i: test4.cpp.i
+.PHONY : test4.i
+
+# target to preprocess a source file
+test4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/test4.cpp.i
+.PHONY : test4.cpp.i
+
+test4.s: test4.cpp.s
+.PHONY : test4.s
+
+# target to generate assembly for a file
+test4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/test4.cpp.s
+.PHONY : test4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1187,6 +1298,9 @@ help:
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
+	@echo ... test2
+	@echo ... test3
+	@echo ... test4
 	@echo ... 20210928factorial.obj
 	@echo ... 20210928factorial.i
 	@echo ... 20210928factorial.s
@@ -1271,6 +1385,15 @@ help:
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
+	@echo ... test2.obj
+	@echo ... test2.i
+	@echo ... test2.s
+	@echo ... test3.obj
+	@echo ... test3.i
+	@echo ... test3.s
+	@echo ... test4.obj
+	@echo ... test4.i
+	@echo ... test4.s
 .PHONY : help
 
 
