@@ -298,6 +298,19 @@ test2/fast:
 .PHONY : 20211018_4_ch0107_09/fast
 
 #=============================================================================
+# Target rules for targets named 6.5
+
+# Build rule for target.
+6.5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 6.5
+.PHONY : 6.5
+
+# fast build rule for target.
+6.5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.5.dir\build.make CMakeFiles/6.5.dir/build
+.PHONY : 6.5/fast
+
+#=============================================================================
 # Target rules for targets named 20211018_4_ch0109_11
 
 # Build rule for target.
@@ -452,6 +465,32 @@ test2/fast:
 20211128_labReports5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/build
 .PHONY : 20211128_labReports5/fast
+
+#=============================================================================
+# Target rules for targets named 20211205_labReports6
+
+# Build rule for target.
+20211205_labReports6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211205_labReports6
+.PHONY : 20211205_labReports6
+
+# fast build rule for target.
+20211205_labReports6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211205_labReports6.dir\build.make CMakeFiles/20211205_labReports6.dir/build
+.PHONY : 20211205_labReports6/fast
+
+#=============================================================================
+# Target rules for targets named 6.6
+
+# Build rule for target.
+6.6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 6.6
+.PHONY : 6.6
+
+# fast build rule for target.
+6.6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.6.dir\build.make CMakeFiles/6.6.dir/build
+.PHONY : 6.6/fast
 
 #=============================================================================
 # Target rules for targets named test3
@@ -1118,6 +1157,78 @@ test4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211128_labReports5.dir\build.make CMakeFiles/20211128_labReports5.dir/20211128_labReports5.cpp.s
 .PHONY : 20211128_labReports5.cpp.s
 
+20211205_labReports6.obj: 20211205_labReports6.cpp.obj
+.PHONY : 20211205_labReports6.obj
+
+# target to build an object file
+20211205_labReports6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211205_labReports6.dir\build.make CMakeFiles/20211205_labReports6.dir/20211205_labReports6.cpp.obj
+.PHONY : 20211205_labReports6.cpp.obj
+
+20211205_labReports6.i: 20211205_labReports6.cpp.i
+.PHONY : 20211205_labReports6.i
+
+# target to preprocess a source file
+20211205_labReports6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211205_labReports6.dir\build.make CMakeFiles/20211205_labReports6.dir/20211205_labReports6.cpp.i
+.PHONY : 20211205_labReports6.cpp.i
+
+20211205_labReports6.s: 20211205_labReports6.cpp.s
+.PHONY : 20211205_labReports6.s
+
+# target to generate assembly for a file
+20211205_labReports6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211205_labReports6.dir\build.make CMakeFiles/20211205_labReports6.dir/20211205_labReports6.cpp.s
+.PHONY : 20211205_labReports6.cpp.s
+
+6.5.obj: 6.5.cpp.obj
+.PHONY : 6.5.obj
+
+# target to build an object file
+6.5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.5.dir\build.make CMakeFiles/6.5.dir/6.5.cpp.obj
+.PHONY : 6.5.cpp.obj
+
+6.5.i: 6.5.cpp.i
+.PHONY : 6.5.i
+
+# target to preprocess a source file
+6.5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.5.dir\build.make CMakeFiles/6.5.dir/6.5.cpp.i
+.PHONY : 6.5.cpp.i
+
+6.5.s: 6.5.cpp.s
+.PHONY : 6.5.s
+
+# target to generate assembly for a file
+6.5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.5.dir\build.make CMakeFiles/6.5.dir/6.5.cpp.s
+.PHONY : 6.5.cpp.s
+
+6.6.obj: 6.6.cpp.obj
+.PHONY : 6.6.obj
+
+# target to build an object file
+6.6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.6.dir\build.make CMakeFiles/6.6.dir/6.6.cpp.obj
+.PHONY : 6.6.cpp.obj
+
+6.6.i: 6.6.cpp.i
+.PHONY : 6.6.i
+
+# target to preprocess a source file
+6.6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.6.dir\build.make CMakeFiles/6.6.dir/6.6.cpp.i
+.PHONY : 6.6.cpp.i
+
+6.6.s: 6.6.cpp.s
+.PHONY : 6.6.s
+
+# target to generate assembly for a file
+6.6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\6.6.dir\build.make CMakeFiles/6.6.dir/6.6.cpp.s
+.PHONY : 6.6.cpp.s
+
 LQ_factorial.obj: LQ_factorial.cpp.obj
 .PHONY : LQ_factorial.obj
 
@@ -1295,6 +1406,9 @@ help:
 	@echo ... 20211113_labReports3
 	@echo ... 20211121_labReports4
 	@echo ... 20211128_labReports5
+	@echo ... 20211205_labReports6
+	@echo ... 6.5
+	@echo ... 6.6
 	@echo ... LQ_factorial
 	@echo ... main
 	@echo ... test
@@ -1376,6 +1490,15 @@ help:
 	@echo ... 20211128_labReports5.obj
 	@echo ... 20211128_labReports5.i
 	@echo ... 20211128_labReports5.s
+	@echo ... 20211205_labReports6.obj
+	@echo ... 20211205_labReports6.i
+	@echo ... 20211205_labReports6.s
+	@echo ... 6.5.obj
+	@echo ... 6.5.i
+	@echo ... 6.5.s
+	@echo ... 6.6.obj
+	@echo ... 6.6.i
+	@echo ... 6.6.s
 	@echo ... LQ_factorial.obj
 	@echo ... LQ_factorial.i
 	@echo ... LQ_factorial.s
