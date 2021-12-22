@@ -233,6 +233,19 @@ depend:
 .PHONY : 20211010_2_Tumour/fast
 
 #=============================================================================
+# Target rules for targets named 20211206_6_1
+
+# Build rule for target.
+20211206_6_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211206_6_1
+.PHONY : 20211206_6_1
+
+# fast build rule for target.
+20211206_6_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_1.dir\build.make CMakeFiles/20211206_6_1.dir/build
+.PHONY : 20211206_6_1/fast
+
+#=============================================================================
 # Target rules for targets named 20211014_3_1_virus
 
 # Build rule for target.
@@ -402,6 +415,19 @@ test2/fast:
 .PHONY : 20211105_3_5_to_3_8/fast
 
 #=============================================================================
+# Target rules for targets named 20211222_labReports10
+
+# Build rule for target.
+20211222_labReports10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211222_labReports10
+.PHONY : 20211222_labReports10
+
+# fast build rule for target.
+20211222_labReports10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211222_labReports10.dir\build.make CMakeFiles/20211222_labReports10.dir/build
+.PHONY : 20211222_labReports10/fast
+
+#=============================================================================
 # Target rules for targets named 20211107_labReports2_non_recursion
 
 # Build rule for target.
@@ -480,6 +506,19 @@ test2/fast:
 .PHONY : 20211205_labReports6/fast
 
 #=============================================================================
+# Target rules for targets named 20211206_6_2
+
+# Build rule for target.
+20211206_6_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 20211206_6_2
+.PHONY : 20211206_6_2
+
+# fast build rule for target.
+20211206_6_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_2.dir\build.make CMakeFiles/20211206_6_2.dir/build
+.PHONY : 20211206_6_2/fast
+
+#=============================================================================
 # Target rules for targets named 6.6
 
 # Build rule for target.
@@ -556,6 +595,19 @@ test4: cmake_check_build_system
 test4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/build
 .PHONY : test4/fast
+
+#=============================================================================
+# Target rules for targets named test5
+
+# Build rule for target.
+test5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test5
+.PHONY : test5
+
+# fast build rule for target.
+test5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/build
+.PHONY : test5/fast
 
 20210928factorial.obj: 20210928factorial.cpp.obj
 .PHONY : 20210928factorial.obj
@@ -1181,6 +1233,78 @@ test4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211205_labReports6.dir\build.make CMakeFiles/20211205_labReports6.dir/20211205_labReports6.cpp.s
 .PHONY : 20211205_labReports6.cpp.s
 
+20211206_6_1.obj: 20211206_6_1.cpp.obj
+.PHONY : 20211206_6_1.obj
+
+# target to build an object file
+20211206_6_1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_1.dir\build.make CMakeFiles/20211206_6_1.dir/20211206_6_1.cpp.obj
+.PHONY : 20211206_6_1.cpp.obj
+
+20211206_6_1.i: 20211206_6_1.cpp.i
+.PHONY : 20211206_6_1.i
+
+# target to preprocess a source file
+20211206_6_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_1.dir\build.make CMakeFiles/20211206_6_1.dir/20211206_6_1.cpp.i
+.PHONY : 20211206_6_1.cpp.i
+
+20211206_6_1.s: 20211206_6_1.cpp.s
+.PHONY : 20211206_6_1.s
+
+# target to generate assembly for a file
+20211206_6_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_1.dir\build.make CMakeFiles/20211206_6_1.dir/20211206_6_1.cpp.s
+.PHONY : 20211206_6_1.cpp.s
+
+20211206_6_2.obj: 20211206_6_2.cpp.obj
+.PHONY : 20211206_6_2.obj
+
+# target to build an object file
+20211206_6_2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_2.dir\build.make CMakeFiles/20211206_6_2.dir/20211206_6_2.cpp.obj
+.PHONY : 20211206_6_2.cpp.obj
+
+20211206_6_2.i: 20211206_6_2.cpp.i
+.PHONY : 20211206_6_2.i
+
+# target to preprocess a source file
+20211206_6_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_2.dir\build.make CMakeFiles/20211206_6_2.dir/20211206_6_2.cpp.i
+.PHONY : 20211206_6_2.cpp.i
+
+20211206_6_2.s: 20211206_6_2.cpp.s
+.PHONY : 20211206_6_2.s
+
+# target to generate assembly for a file
+20211206_6_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211206_6_2.dir\build.make CMakeFiles/20211206_6_2.dir/20211206_6_2.cpp.s
+.PHONY : 20211206_6_2.cpp.s
+
+20211222_labReports10.obj: 20211222_labReports10.cpp.obj
+.PHONY : 20211222_labReports10.obj
+
+# target to build an object file
+20211222_labReports10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211222_labReports10.dir\build.make CMakeFiles/20211222_labReports10.dir/20211222_labReports10.cpp.obj
+.PHONY : 20211222_labReports10.cpp.obj
+
+20211222_labReports10.i: 20211222_labReports10.cpp.i
+.PHONY : 20211222_labReports10.i
+
+# target to preprocess a source file
+20211222_labReports10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211222_labReports10.dir\build.make CMakeFiles/20211222_labReports10.dir/20211222_labReports10.cpp.i
+.PHONY : 20211222_labReports10.cpp.i
+
+20211222_labReports10.s: 20211222_labReports10.cpp.s
+.PHONY : 20211222_labReports10.s
+
+# target to generate assembly for a file
+20211222_labReports10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\20211222_labReports10.dir\build.make CMakeFiles/20211222_labReports10.dir/20211222_labReports10.cpp.s
+.PHONY : 20211222_labReports10.cpp.s
+
 6.5.obj: 6.5.cpp.obj
 .PHONY : 6.5.obj
 
@@ -1373,6 +1497,30 @@ test4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/test4.cpp.s
 .PHONY : test4.cpp.s
 
+test5.obj: test5.cpp.obj
+.PHONY : test5.obj
+
+# target to build an object file
+test5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/test5.cpp.obj
+.PHONY : test5.cpp.obj
+
+test5.i: test5.cpp.i
+.PHONY : test5.i
+
+# target to preprocess a source file
+test5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/test5.cpp.i
+.PHONY : test5.cpp.i
+
+test5.s: test5.cpp.s
+.PHONY : test5.s
+
+# target to generate assembly for a file
+test5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/test5.cpp.s
+.PHONY : test5.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1407,6 +1555,9 @@ help:
 	@echo ... 20211121_labReports4
 	@echo ... 20211128_labReports5
 	@echo ... 20211205_labReports6
+	@echo ... 20211206_6_1
+	@echo ... 20211206_6_2
+	@echo ... 20211222_labReports10
 	@echo ... 6.5
 	@echo ... 6.6
 	@echo ... LQ_factorial
@@ -1415,6 +1566,7 @@ help:
 	@echo ... test2
 	@echo ... test3
 	@echo ... test4
+	@echo ... test5
 	@echo ... 20210928factorial.obj
 	@echo ... 20210928factorial.i
 	@echo ... 20210928factorial.s
@@ -1493,6 +1645,15 @@ help:
 	@echo ... 20211205_labReports6.obj
 	@echo ... 20211205_labReports6.i
 	@echo ... 20211205_labReports6.s
+	@echo ... 20211206_6_1.obj
+	@echo ... 20211206_6_1.i
+	@echo ... 20211206_6_1.s
+	@echo ... 20211206_6_2.obj
+	@echo ... 20211206_6_2.i
+	@echo ... 20211206_6_2.s
+	@echo ... 20211222_labReports10.obj
+	@echo ... 20211222_labReports10.i
+	@echo ... 20211222_labReports10.s
 	@echo ... 6.5.obj
 	@echo ... 6.5.i
 	@echo ... 6.5.s
@@ -1517,6 +1678,9 @@ help:
 	@echo ... test4.obj
 	@echo ... test4.i
 	@echo ... test4.s
+	@echo ... test5.obj
+	@echo ... test5.i
+	@echo ... test5.s
 .PHONY : help
 
 
