@@ -1,4 +1,44 @@
-"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\Develop\CLionProjects\Data_Structure
+"C:\Program Files\JetBrains\CLion 2021.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Develop\CLionProjects\Data_Structure
+    -- src/20210928factorial.cpp will be compiled to bin/20210928factorial
+    -- src/20210928multiplicationTable.cpp will be compiled to bin/20210928multiplicationTable
+    -- src/20210928spring.cpp will be compiled to bin/20210928spring
+    -- src/20210929bp.cpp will be compiled to bin/20210929bp
+    -- src/20210929drugstore.cpp will be compiled to bin/20210929drugstore
+    -- src/20211009_1_Prevalence.cpp will be compiled to bin/20211009_1_Prevalence
+    -- src/20211010_2_Tumour.cpp will be compiled to bin/20211010_2_Tumour
+    -- src/20211010_3_Difference.cpp will be compiled to bin/20211010_3_Difference
+    -- src/20211014_3_1_virus.cpp will be compiled to bin/20211014_3_1_virus
+    -- src/20211014_3_2_palindrome.cpp will be compiled to bin/20211014_3_2_palindrome
+    -- src/20211018_4_ch0107_02.cpp will be compiled to bin/20211018_4_ch0107_02
+    -- src/20211018_4_ch0107_09.cpp will be compiled to bin/20211018_4_ch0107_09
+    -- src/20211018_4_ch0109_11.cpp will be compiled to bin/20211018_4_ch0109_11
+    -- src/20211024_contiguousList.cpp will be compiled to bin/20211024_contiguousList
+    -- src/20211028_10.cpp will be compiled to bin/20211028_10
+    -- src/20211028_7.cpp will be compiled to bin/20211028_7
+    -- src/20211031_8.cpp will be compiled to bin/20211031_8
+    -- src/20211104_3.cpp will be compiled to bin/20211104_3
+    -- src/20211105_3_5_to_3_8.cpp will be compiled to bin/20211105_3_5_to_3_8
+    -- src/20211107_3_22.cpp will be compiled to bin/20211107_3_22
+    -- src/20211107_labReports2_non_recursion.cpp will be compiled to bin/20211107_labReports2_non_recursion
+    -- src/20211107_labReports2_recursion.cpp will be compiled to bin/20211107_labReports2_recursion
+    -- src/20211113_labReports3.cpp will be compiled to bin/20211113_labReports3
+    -- src/20211121_labReports4.cpp will be compiled to bin/20211121_labReports4
+    -- src/20211128_labReports5.cpp will be compiled to bin/20211128_labReports5
+    -- src/20211205_labReports6.cpp will be compiled to bin/20211205_labReports6
+    -- src/20211206_6_1.cpp will be compiled to bin/20211206_6_1
+    -- src/20211206_6_2.cpp will be compiled to bin/20211206_6_2
+    -- src/20211222_labReports10.cpp will be compiled to bin/20211222_labReports10
+    -- src/6.5.cpp will be compiled to bin/6.5
+    -- src/6.6.cpp will be compiled to bin/6.6
+    -- src/LQ_factorial.cpp will be compiled to bin/LQ_factorial
+    -- src/main.cpp will be compiled to bin/main
+    -- src/test.cpp will be compiled to bin/test
+    -- src/test2.cpp will be compiled to bin/test2
+    -- src/test3.cpp will be compiled to bin/test3
+    -- src/test4.cpp will be compiled to bin/test4
+    -- src/test5.cpp will be compiled to bin/test5
+    -- src/LabReports_1.cpp will be compiled to bin/LabReports_1
+    -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
 -- Configuring done
 -- Generating done
 -- Build files have been written to: D:/Develop/CLionProjects/Data_Structure/cmake-build-debug

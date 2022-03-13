@@ -4,20 +4,11 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Develop/CLionProjects/Data_Structure/LQ_factorial.cpp" "D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LQ_factorial.dir/LQ_factorial.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/Develop/CLionProjects/Data_Structure/2021/LQ_factorial.cpp" "CMakeFiles/LQ_factorial.dir/2021/LQ_factorial.cpp.obj" "gcc" "CMakeFiles/LQ_factorial.dir/2021/LQ_factorial.cpp.obj.d"
   )
 
 # Targets to which this target links.
