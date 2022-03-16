@@ -13,15 +13,6 @@ using namespace std;
 #define LIST_INIT_SIZE 50
 #define LISTINCREMENT 10
 
-typedef struct BookInfo {
-    int isbn;
-    char title[30];
-    char author[30];
-    int createTime;
-    float price;
-    int scanNum;
-} Book;
-
 typedef struct LocationInfo {
     int floor;
     int bookshelfNum;
@@ -30,37 +21,61 @@ typedef struct LocationInfo {
 
 typedef struct BorrowInfo {
     int stuId;
-    char stuName[30];
+    string stuName;
     int borrowTimes;
 } Bor;
 
+typedef struct BookInfo {
+    int id;
+    int isbn;
+    string title[30];
+    string author[30];
+    int createTime;
+    float price;
+    int scanNum;
+    Loc loc;
+    Bor bor;
+} Book;
+
 typedef struct {
-    Book *data;                                 //数据存储域
-    int length;                                 //长度域
+    Book *data;
+    int length;
 } linklist;
 
-typedef struct {
-    Book *book;
-    int length;
-    int listSize;
-} SqList;
-
-int InitList_Sq(SqList &L) {   //构造一个空的线性表L。
-    L.book = (Book *) malloc(LIST_INIT_SIZE * sizeof(Book));
-    //申请初始化长度的内存
-    if (!L.book) {
-        //如果L的序列非空
-        exit(OVERFLOW);
-        //说明L被重定义了，抛出溢出
-    }
-    L.length = 0;
-    //默认L内有0个元素
-    L.listSize = LIST_INIT_SIZE;
-    //默认L的容量为初始化长度
-    return OK;
+int getTime() {
+    time_t now_timestamp;
+    now_timestamp = time(nullptr);
+    string now_time = ctime(&now_timestamp);
+    return 0;
 }
 
-void menuList() {
+Boolean createBookSystem(BookSystem *bs) {
+    FILE *pf = fopen(SystemPath, "r");
+    if (pf != NULL) {
+        //1，已经创建过了，直接读取
+        fscanf(pf, "createdAt: %d\nauthor: %s\nbookTotal:%d\nnextId: %d\n", &bs->createdAt,bs->author,&bs->bookTotal,&bs->nextId);
+        fclose(pf);
+        //读取图书信息列表
+        readBookSystem(bs);
+    } else {
+        //2.读取失败，新建一个
+        fclose(pf);
+        bs->createdAt = getTime();
+        strcpy(bs->author,"vanxizzz");
+        bs->nextId = 0;
+        bs->bookTotal = 0;
+        bs->firstBook = NULL;
+        bs->lastBook = NULL;
+        for (int i = 0; i < 5; ++i) {
+            insertBook(bs,1);//模拟图书入库
+        }
+        saveBookSystem(bs);//保存到文件中
+    }
+    return 1;
+}
+
+int menu() {
+    int c;
     cout << "                    *图书管理系统*                   \n";
     cout << "-----------------------------------------------------\n";
     cout << "                    1.创建记录表格                   \n";
@@ -77,4 +92,67 @@ void menuList() {
     cout << "                    -12.输入数据-                    \n";
     cout << "                       -0.退出-                      \n";
     cout << "                  |请输入选择：";
+    cin >> c;
+    return c;
 }
+
+int main() {
+    while (true) {
+        switch (menu()) {
+            case 1: {
+                SqList L;
+                L.elem = new ElemType[MAX + 1];
+                L.len = 0;
+                Create_SqList(L);
+                show(L);
+                while (true) {
+                    bool flag = true;
+                    switch (menu2()) {
+                        case 0:
+                            flag = false;
+                            break;
+                        case 1:
+                            InsertSort(L);
+                            show(L);
+                            break;
+                        case 2:
+                            BInsertSort(L);
+                            show(L);
+                            break;
+                        case 3:
+                            Shell(L);
+                            show(L);
+                            break;
+                        case 4:
+                            BubbleSort(L);
+                            show(L);
+                            break;
+                        case 5:
+                            QuickSort(L);
+                            show(L);
+                            break;
+                        case 6:
+                            SelectSort(L);
+                            show(L);
+                            break;
+                        case 7:
+                            MergeSort(L,0,L.len);
+                            show(L);
+                            break;
+                        default:
+                            break;
+
+                    }
+                    if (!flag) {
+                        break;
+                    }
+                }
+                break;
+            }
+            case 0:
+                cout << "退出成功\n" << endl;
+                exit(0);
+            default:
+                break;
+        }
+    }

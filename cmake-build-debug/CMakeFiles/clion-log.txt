@@ -38,6 +38,9 @@
     -- src/test4.cpp will be compiled to bin/test4
     -- src/test5.cpp will be compiled to bin/test5
     -- src/LabReports_1.cpp will be compiled to bin/LabReports_1
+    -- src/LabReports_1_1.cpp will be compiled to bin/LabReports_1_1
+    -- src/test2022.cpp will be compiled to bin/test2022
+    -- src/zyx_labReport01.cpp will be compiled to bin/zyx_labReport01
     -- src/CMakeCXXCompilerId.cpp will be compiled to bin/CMakeCXXCompilerId
 -- Configuring done
 -- Generating done
