@@ -2,6 +2,7 @@
 // Created by Tou on 2022/3/17.
 //
 
+#include <cstring>
 #include "iostream"
 
 using namespace std;
@@ -61,19 +62,39 @@ void delStr() {
 
 void replaceStr() {
     int index = 0;
-    string replaceS,appear;
+    string replaceS, appear;
     cout << "请输入需要查找的字符：";
     cin >> appear;
     cout << "请输入需要替换的字符：";
     cin >> replaceS;
     while ((index = int(str.find(appear, index))) != string::npos) {
-        str.replace(index,appear.length(),replaceS);
+        str.replace(index, appear.length(), replaceS);
     }
     cout << str;
 }
 
-void BF(){
-//    TODO
+void BF() {
+    int len1 = int(str.length());
+    char s1[len1];
+    strcpy(s1, str.c_str());
+    string appear;
+    cout << "请输入需要匹配的字符：";
+    cin >> appear;
+    int len2 = int(appear.length());
+    char s2[len2];
+    strcpy(s2, appear.c_str());
+    for (int i = 0; i < len1; i++) {
+        int k = i, j = 0;
+        for (j; j < len2; j++, k++) {
+            if (s1[k] != s2[j]) {
+                break;
+            }
+        }
+        if (j == len2) {
+            cout << "匹配成功，" << "第一次匹配的位置是：第" << i + 1 << "位" << endl;
+            break;
+        }
+    }
 }
 
 int menu() {
