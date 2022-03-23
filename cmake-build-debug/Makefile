@@ -441,6 +441,19 @@ LabReports_1_1/fast:
 .PHONY : 20211031_8/fast
 
 #=============================================================================
+# Target rules for targets named LabReports_2
+
+# Build rule for target.
+LabReports_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LabReports_2
+.PHONY : LabReports_2
+
+# fast build rule for target.
+LabReports_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_2.dir\build.make CMakeFiles/LabReports_2.dir/build
+.PHONY : LabReports_2/fast
+
+#=============================================================================
 # Target rules for targets named 20211104_3
 
 # Build rule for target.
@@ -1634,6 +1647,30 @@ test5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_1_1.dir\build.make CMakeFiles/LabReports_1_1.dir/2022/LabReports_1_1.cpp.s
 .PHONY : 2022/LabReports_1_1.cpp.s
 
+2022/LabReports_2.obj: 2022/LabReports_2.cpp.obj
+.PHONY : 2022/LabReports_2.obj
+
+# target to build an object file
+2022/LabReports_2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_2.dir\build.make CMakeFiles/LabReports_2.dir/2022/LabReports_2.cpp.obj
+.PHONY : 2022/LabReports_2.cpp.obj
+
+2022/LabReports_2.i: 2022/LabReports_2.cpp.i
+.PHONY : 2022/LabReports_2.i
+
+# target to preprocess a source file
+2022/LabReports_2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_2.dir\build.make CMakeFiles/LabReports_2.dir/2022/LabReports_2.cpp.i
+.PHONY : 2022/LabReports_2.cpp.i
+
+2022/LabReports_2.s: 2022/LabReports_2.cpp.s
+.PHONY : 2022/LabReports_2.s
+
+# target to generate assembly for a file
+2022/LabReports_2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_2.dir\build.make CMakeFiles/LabReports_2.dir/2022/LabReports_2.cpp.s
+.PHONY : 2022/LabReports_2.cpp.s
+
 2022/test2022.obj: 2022/test2022.cpp.obj
 .PHONY : 2022/test2022.obj
 
@@ -1749,6 +1786,7 @@ help:
 	@echo ... LQ_factorial
 	@echo ... LabReports_1
 	@echo ... LabReports_1_1
+	@echo ... LabReports_2
 	@echo ... main
 	@echo ... test
 	@echo ... test2
@@ -1877,6 +1915,9 @@ help:
 	@echo ... 2022/LabReports_1_1.obj
 	@echo ... 2022/LabReports_1_1.i
 	@echo ... 2022/LabReports_1_1.s
+	@echo ... 2022/LabReports_2.obj
+	@echo ... 2022/LabReports_2.i
+	@echo ... 2022/LabReports_2.s
 	@echo ... 2022/test2022.obj
 	@echo ... 2022/test2022.i
 	@echo ... 2022/test2022.s
