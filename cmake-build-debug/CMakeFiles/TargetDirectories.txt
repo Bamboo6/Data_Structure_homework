@@ -43,4 +43,7 @@ D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/test.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LabReports_1.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/test4.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/test5.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LabReports_3.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/testbulid.dir
+D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/LabReports_3_final.dir
 D:/Develop/CLionProjects/Data_Structure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

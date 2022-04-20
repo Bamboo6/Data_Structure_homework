@@ -106,6 +106,9 @@ all: CMakeFiles/test.dir/all
 all: CMakeFiles/LabReports_1.dir/all
 all: CMakeFiles/test4.dir/all
 all: CMakeFiles/test5.dir/all
+all: CMakeFiles/LabReports_3.dir/all
+all: CMakeFiles/testbulid.dir/all
+all: CMakeFiles/LabReports_3_final.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -157,6 +160,9 @@ clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/LabReports_1.dir/clean
 clean: CMakeFiles/test4.dir/clean
 clean: CMakeFiles/test5.dir/clean
+clean: CMakeFiles/LabReports_3.dir/clean
+clean: CMakeFiles/testbulid.dir/clean
+clean: CMakeFiles/LabReports_3_final.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -478,7 +484,7 @@ CMakeFiles/CMakeCXXCompilerId.dir/clean:
 CMakeFiles/zyx_labReport01.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zyx_labReport01.dir\build.make CMakeFiles/zyx_labReport01.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zyx_labReport01.dir\build.make CMakeFiles/zyx_labReport01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=87,88 "Built target zyx_labReport01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=93,94 "Built target zyx_labReport01"
 .PHONY : CMakeFiles/zyx_labReport01.dir/all
 
 # Build rule for subdir invocation for target.
@@ -504,7 +510,7 @@ CMakeFiles/zyx_labReport01.dir/clean:
 CMakeFiles/test2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2.dir\build.make CMakeFiles/test2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=77,78 "Built target test2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=81,82 "Built target test2"
 .PHONY : CMakeFiles/test2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -686,7 +692,7 @@ CMakeFiles/20211024_contiguousList.dir/clean:
 CMakeFiles/test2022.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2022.dir\build.make CMakeFiles/test2022.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test2022.dir\build.make CMakeFiles/test2022.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=79,80 "Built target test2022"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=83,84 "Built target test2022"
 .PHONY : CMakeFiles/test2022.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1128,7 +1134,7 @@ CMakeFiles/6.6.dir/clean:
 CMakeFiles/test3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test3.dir\build.make CMakeFiles/test3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=81,82 "Built target test3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=85,86 "Built target test3"
 .PHONY : CMakeFiles/test3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1180,7 +1186,7 @@ CMakeFiles/LQ_factorial.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=73,74 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=77,78 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1206,7 +1212,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=75,76 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=79,80 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1258,7 +1264,7 @@ CMakeFiles/LabReports_1.dir/clean:
 CMakeFiles/test4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test4.dir\build.make CMakeFiles/test4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=83,84 "Built target test4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=87,88 "Built target test4"
 .PHONY : CMakeFiles/test4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1284,7 +1290,7 @@ CMakeFiles/test4.dir/clean:
 CMakeFiles/test5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=85,86 "Built target test5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=89,90 "Built target test5"
 .PHONY : CMakeFiles/test5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1302,6 +1308,84 @@ test5: CMakeFiles/test5.dir/rule
 CMakeFiles/test5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test5.dir\build.make CMakeFiles/test5.dir/clean
 .PHONY : CMakeFiles/test5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LabReports_3.dir
+
+# All Build rule for target.
+CMakeFiles/LabReports_3.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3.dir\build.make CMakeFiles/LabReports_3.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3.dir\build.make CMakeFiles/LabReports_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=73,74 "Built target LabReports_3"
+.PHONY : CMakeFiles/LabReports_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LabReports_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LabReports_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/LabReports_3.dir/rule
+
+# Convenience name for target.
+LabReports_3: CMakeFiles/LabReports_3.dir/rule
+.PHONY : LabReports_3
+
+# clean rule for target.
+CMakeFiles/LabReports_3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3.dir\build.make CMakeFiles/LabReports_3.dir/clean
+.PHONY : CMakeFiles/LabReports_3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testbulid.dir
+
+# All Build rule for target.
+CMakeFiles/testbulid.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbulid.dir\build.make CMakeFiles/testbulid.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbulid.dir\build.make CMakeFiles/testbulid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=91,92 "Built target testbulid"
+.PHONY : CMakeFiles/testbulid.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testbulid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testbulid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/testbulid.dir/rule
+
+# Convenience name for target.
+testbulid: CMakeFiles/testbulid.dir/rule
+.PHONY : testbulid
+
+# clean rule for target.
+CMakeFiles/testbulid.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testbulid.dir\build.make CMakeFiles/testbulid.dir/clean
+.PHONY : CMakeFiles/testbulid.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/LabReports_3_final.dir
+
+# All Build rule for target.
+CMakeFiles/LabReports_3_final.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3_final.dir\build.make CMakeFiles/LabReports_3_final.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3_final.dir\build.make CMakeFiles/LabReports_3_final.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles --progress-num=75,76 "Built target LabReports_3_final"
+.PHONY : CMakeFiles/LabReports_3_final.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LabReports_3_final.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LabReports_3_final.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Develop\CLionProjects\Data_Structure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/LabReports_3_final.dir/rule
+
+# Convenience name for target.
+LabReports_3_final: CMakeFiles/LabReports_3_final.dir/rule
+.PHONY : LabReports_3_final
+
+# clean rule for target.
+CMakeFiles/LabReports_3_final.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LabReports_3_final.dir\build.make CMakeFiles/LabReports_3_final.dir/clean
+.PHONY : CMakeFiles/LabReports_3_final.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

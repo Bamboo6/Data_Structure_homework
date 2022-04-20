@@ -9,10 +9,12 @@ using namespace std;
 
 string str;
 
+//1 输出
 void output() {
     cout << "输入内容为：" << str;
 }
 
+//2 计数
 void countNum() {
     int index = 0;
     string noSpaceStr = str;
@@ -24,6 +26,7 @@ void countNum() {
     cout << "字符个数为：" << num;
 }
 
+//3 查找
 void firstAppear() {
     string appear;
     cout << "请输入需要查找的字符：";
@@ -36,6 +39,7 @@ void firstAppear() {
     }
 }
 
+//4 插入
 void insertStr() {
     string insertS, inputIndex;
     int index = 0;
@@ -49,6 +53,7 @@ void insertStr() {
     cout << str;
 }
 
+//5 删除
 void delStr() {
     int index = 0;
     string delS;
@@ -60,6 +65,7 @@ void delStr() {
     cout << str;
 }
 
+//6 替换
 void replaceStr() {
     int index = 0;
     string replaceS, appear;
@@ -73,6 +79,7 @@ void replaceStr() {
     cout << str;
 }
 
+//7 BF算法
 void BF() {
     int len1 = int(str.length());
     char s1[len1];
